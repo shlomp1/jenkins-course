@@ -13,8 +13,8 @@ node {
       println('so far so good...')
     }
     stage('test') {
-      println('A test has failed!')
-      sh 'exit 1'
+      println('A test has succeeded!')
+      sh 'exit 0'
     }
   } catch(e) {
     // mark build as failed
