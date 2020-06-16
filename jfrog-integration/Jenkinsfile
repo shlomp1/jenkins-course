@@ -1,5 +1,5 @@
 node {
-    def server = Artifactory.server('laptop:8080')
+    def server = Artifactory.server('laptop:8082')
     def rtGradle = Artifactory.newGradleBuild()
     def buildInfo = Artifactory.newBuildInfo()
     stage 'Build'
